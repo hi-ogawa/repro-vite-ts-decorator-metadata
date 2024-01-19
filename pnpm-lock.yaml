@@ -46,6 +46,9 @@ devDependencies:
   vite:
     specifier: ^5.0.8
     version: 5.0.11
+  vite-plugin-typescript-transform:
+    specifier: ^1.2.2
+    version: 1.2.2(typescript@5.3.3)(vite@5.0.11)
 
 packages:
 
@@ -1104,6 +1107,7 @@ packages:
     resolution: {integrity: sha512-HJ96Hev2hX/6i5cDVwcqiJBBtuo9+FeIJOtZ9W1kA5M6AMJRHUZlpYZ1/SbEwtO0ioNAW8rUooVpC/WehY2SfA==}
     engines: {node: '>=12'}
     hasBin: true
+    requiresBuild: true
     optionalDependencies:
       '@esbuild/aix-ppc64': 0.19.11
       '@esbuild/android-arm': 0.19.11
@@ -1876,6 +1880,17 @@ packages:
     resolution: {integrity: sha512-7rKUyy33Q1yc98pQ1DAmLtwX109F7TIfWlW1Ydo8Wl1ii1SeHieeh0HHfPeL2fMXK6z0s8ecKs9frCuLJvndBg==}
     dependencies:
       punycode: 2.3.1
+    dev: true
+
+  /vite-plugin-typescript-transform@1.2.2(typescript@5.3.3)(vite@5.0.11):
+    resolution: {integrity: sha512-NjR6hPZgjs1FpjG/NyII5Lar4380zdqjG8hpn7gRk6sBTrh++JkhnSUlTBqAayBYGWlc4cF7/7xg+duIkVX1uA==}
+    engines: {node: '> 14.18'}
+    peerDependencies:
+      typescript: '>= 4'
+      vite: '>= 4'
+    dependencies:
+      typescript: 5.3.3
+      vite: 5.0.11
     dev: true
 
   /vite@5.0.11:

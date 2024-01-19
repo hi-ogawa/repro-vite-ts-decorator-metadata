@@ -1,6 +1,6 @@
 import { Gender } from './gender';
 import { LivingBeing } from './living-being';
-import {JsonObject} from "typescript-json-serializer";
+import {JsonObject, JsonProperty} from "typescript-json-serializer";
 
 @JsonObject()
 export class Human extends LivingBeing {

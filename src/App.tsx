@@ -34,12 +34,11 @@ function App() {
     })
 
 // Deserialize
-    // @ts-ignore
     const organization = defaultSerializer.deserialize(data, Organization);
 
 // Serialize
-    const data = defaultSerializer.serialize(organization);
-    console.log(data);
+    const data2 = defaultSerializer.serialize(organization);
+    console.log(data2);
 
   return (
     <>

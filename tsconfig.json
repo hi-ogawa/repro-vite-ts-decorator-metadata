@@ -20,10 +20,9 @@
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true,
     "strictPropertyInitialization": false,
-    "compilerOptions": {
-      "emitDecoratorMetadata": true,
-      "experimentalDecorators": true,
-    }
+
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
   },
   "include": ["src"],
   "references": [{ "path": "./tsconfig.node.json" }]
